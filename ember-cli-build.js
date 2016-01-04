@@ -5,6 +5,47 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
+    fingerprint: {
+      exclude: ['images/sprite']
+    },
+    sprite: [
+      {
+        src: [
+          'images/sprite/1x/**/*.png'
+        ],
+        compositor: 'gm',
+        spritePath: 'assets/sprite.png',
+        stylesheetPath: 'assets/sprite.css',
+        stylesheet: 'app/styles/sprite.tpl',
+        stylesheetOptions: {
+          prefix: 'icon.icon-',
+          spritePath: 'sprite.png',
+          pixelRatio: 1
+        },
+        layoutOptions: {
+          padding: 0
+        },
+        layout: 'horizontal'
+      },
+      {
+        src: [
+          'images/sprite/2x/**/*.png'
+        ],
+        compositor: 'gm',
+        spritePath: 'assets/sprite-2x.png',
+        stylesheetPath: 'assets/sprite-2x.css',
+        stylesheet: 'app/styles/sprite-2x.tpl',
+        stylesheetOptions: {
+          prefix: 'icon.icon-',
+          spritePath: 'sprite-2x.png',
+          pixelRatio: 2
+        },
+        layoutOptions: {
+          padding: 0
+        },
+        layout: 'horizontal'
+      }
+    ]
   });
 
   // Use `app.import` to add additional libraries to the generated
