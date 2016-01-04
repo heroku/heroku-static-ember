@@ -1,20 +1,15 @@
 {
   "name": "heroku-static-ember",
   "version": "0.0.0",
-  "description": "Small description for heroku-static-ember goes here",
-  "private": true,
+  "description": "Example static Ember app deployed on Heroku",
+  "private": false,
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember test"
-  },
-  "repository": "",
+  "repository": "https://github.com/heroku/heroku-static-ember",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": "4.2.x"
   },
   "author": "",
   "license": "MIT",
@@ -29,12 +24,13 @@
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.3.1",
     "ember-cli-qunit": "^1.1.0",
-    "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.0.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.2.1",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-resolver": "^2.0.3"
+    "ember-cli-release": "0.2.8",
+    "ember-resolver": "^2.0.3",
+    "ember-sprite": "^0.7.0",
+    "replace": "^0.3.0"
   }
 }
