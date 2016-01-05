@@ -1,0 +1,19 @@
+{
+  "name":"Heroku Static Ember",
+  "description":"An example of deploying an Ember app on Heroku using a static buildpack",
+  "repository": "https://github.com/Dhaulagiri/heroku-static-ember",
+  "keywords": ["ember.js", "static", "node", "javascript", "heroku"],
+  "logo": "http://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png",
+  "env": {
+    "EMBER_ENV": {
+      "description": "Environment desired for ember-cli builds",
+      "value": "production"
+    },
+    "NODE_ENV": "production"
+  },
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-apt" },
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs" },
+    { "url": "https://github.com/hone/heroku-buildpack-static" }
+  ]
+}
