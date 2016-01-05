@@ -1,8 +1,8 @@
 {
   "name": "heroku-static-ember",
   "version": "0.0.0",
-  "description": "Small description for heroku-static-ember goes here",
-  "private": true,
+  "description": "Example static Ember app deployed on Heroku",
+  "private": false,
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,9 +11,9 @@
     "postinstall": "bower install && ./bin/build",
     "production": "./bin/rewrite-index-meta && ./bin/set-cdn-prefix && bin/boot"
   },
-  "repository": "",
+  "repository": "https://github.com/Dhaulagiri/heroku-static-ember",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": "4.2.x"
   },
   "author": "",
   "license": "MIT",

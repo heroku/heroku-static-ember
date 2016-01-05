@@ -1,6 +1,10 @@
 # Heroku Static Ember App
 
-This repo demonstrates a sample Ember.js application deployed to Heroku using a static buildpack
+This repo demonstrates a sample Ember.js application deployed to Heroku using a [static buildpack](https://github.com/hone/heroku-buildpack-static).  It includes support for:
+
+* Generating retina/non-retina sprites
+* [Heroku Pipelines](https://devcenter.heroku.com/articles/pipelines)
+* Hosting assets on a CDN
 
 # Deploying to Heroku
 
