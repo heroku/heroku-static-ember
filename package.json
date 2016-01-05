@@ -11,7 +11,7 @@
     "postinstall": "bower install && ./bin/build",
     "production": "./bin/rewrite-index-meta && ./bin/set-cdn-prefix && bin/boot"
   },
-  "repository": "https://github.com/Dhaulagiri/heroku-static-ember",
+  "repository": "https://github.com/heroku/heroku-static-ember",
   "engines": {
     "node": "4.2.x"
   },
