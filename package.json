@@ -19,7 +19,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "postinstall": "bower install && ./bin/build"
+    "postinstall": "bower install && ./bin/build",
+    "production": "./bin/rewrite-index-meta && bin/boot"
   },
   "dependencies": {
     "broccoli-asset-rev": "^2.2.0",
