@@ -6,7 +6,8 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-      exclude: ['images/sprite']
+      exclude: ['images/sprite'],
+      prepend: process.env.CDN_STUB_STRING
     },
     sprite: [
       {

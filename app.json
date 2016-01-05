@@ -9,7 +9,17 @@
       "description": "Environment desired for ember-cli builds",
       "value": "production"
     },
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "CDN_STUB_STRING": {
+      "description": "Unique placeholder string for CDN prefix",
+      "value": "",
+      "required": false
+    },
+    "CDN_HOST": {
+      "description": "CDN hostname prefix (https://foo.cloudfront.net/)",
+      "value": "",
+      "required": false
+    }
   },
   "buildpacks": [
     { "url": "https://github.com/heroku/heroku-buildpack-apt" },
