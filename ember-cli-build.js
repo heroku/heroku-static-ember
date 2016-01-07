@@ -14,7 +14,7 @@ module.exports = function(defaults) {
         src: [
           'images/sprite/1x/**/*.png'
         ],
-        compositor: 'gm',
+        compositor: 'jimp',
         spritePath: 'assets/sprite.png',
         stylesheetPath: 'assets/sprite.css',
         stylesheet: 'app/styles/sprite.tpl',
@@ -26,13 +26,13 @@ module.exports = function(defaults) {
         layoutOptions: {
           padding: 0
         },
-        layout: 'horizontal'
+        layout: 'packed'
       },
       {
         src: [
           'images/sprite/2x/**/*.png'
         ],
-        compositor: 'gm',
+        compositor: 'jimp',
         spritePath: 'assets/sprite-2x.png',
         stylesheetPath: 'assets/sprite-2x.css',
         stylesheet: 'app/styles/sprite-2x.tpl',
@@ -44,7 +44,7 @@ module.exports = function(defaults) {
         layoutOptions: {
           padding: 0
         },
-        layout: 'horizontal'
+        layout: 'packed'
       }
     ]
   });
