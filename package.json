@@ -7,10 +7,6 @@
     "doc": "doc",
     "test": "tests"
   },
-  "scripts": {
-    "postinstall": "bower install && ./bin/build",
-    "production": "./bin/rewrite-index-meta && ./bin/set-cdn-prefix && bin/boot"
-  },
   "repository": "https://github.com/heroku/heroku-static-ember",
   "engines": {
     "node": "4.2.x"
@@ -33,7 +29,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.3",
-    "ember-sprite": "0.4.0",
+    "ember-sprite": "^0.7.0",
     "replace": "^0.3.0"
   },
   "devDependencies": {

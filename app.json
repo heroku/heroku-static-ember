@@ -1,29 +1,20 @@
 {
-  "name":"Heroku Static Ember",
-  "description":"An example of deploying an Ember app on Heroku using a static buildpack",
-  "repository": "https://github.com/heroku/heroku-static-ember",
-  "keywords": ["ember.js", "static", "node", "javascript", "heroku"],
-  "logo": "http://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png",
+  "name":"ember-cli-sample-app",
+  "description":"ember-cli sample application",
+  "repository": "https://github.com/heroku/heroku-buildpack-ember-cli",
+  "logo": "http://emberjs.com/images/logos/ember-logo.png",
+  "keywords": ["heroku", "buildpack", "heroku-buildpack", "ember", "ember.js", "ember-cli"],
   "env": {
     "EMBER_ENV": {
       "description": "Environment desired for ember-cli builds",
       "value": "production"
     },
     "NODE_ENV": "production",
-    "CDN_STUB_STRING": {
-      "description": "Unique placeholder string for CDN prefix",
-      "value": "",
-      "required": false
-    },
-    "CDN_HOST": {
-      "description": "CDN hostname prefix (https://foo.cloudfront.net/)",
-      "value": "",
-      "required": false
-    }
+    "NPM_CONFIG_PRODUCTION":"false"
   },
   "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-apt" },
     { "url": "https://github.com/heroku/heroku-buildpack-nodejs" },
+    { "url": "https://github.com/heroku/heroku-buildpack-ember-cli" },
     { "url": "https://github.com/hone/heroku-buildpack-static" }
   ]
 }
